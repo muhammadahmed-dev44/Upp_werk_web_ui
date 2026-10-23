@@ -1,0 +1,593 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    height: 66px;
+    display: flex;
+    align-items: center;
+    padding: 0 22px;
+    border-bottom: 1px solid #ddd;
+    background-color: white;
+}
+
+/* Logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #181818;
+    margin-right: 35px;
+}
+
+/* Menu */
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+    justify-content: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #222;
+    font-size: 14px;
+    
+}
+
+/* search box */
+#search_box {
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    margin-left: 70px;
+    width: 270px;
+}
+
+.Serach_logo_img {
+    height: 24px;
+    position: absolute;
+    left: 7px;
+}
+
+#search_box > input {
+    width: 100%;
+    padding: 10px 70px 10px 34px;
+    border-radius: 40px;
+    font-size: 15px;
+    border: 2px solid gray;
+    outline: none;
+}
+
+#search_box > p {
+    border-left: 1px solid gray;
+    position: absolute;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    padding-left: 6px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.search-box-img {
+    width: 20px;
+}
+
+/* Right Menu */
+.right-menu {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.login {
+    text-decoration: none;
+    color: #222;
+    font-size: 14px;
+}
+
+.signup {
+    text-decoration: none;
+    background-color: #108a00;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Hover */
+.menu a:hover, .login:hover {
+    color: #108a00;
+}
+
+.signup:hover {
+    background-color: #0b7000;
+}
+
+.next_to_navbar_card {
+    margin: 50px 20px 10px 20px;
+    background-color: #CEF7D2;
+    height: 80px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 60px 0px 60px;
+    align-items: center;
+}
+
+.next_to_navbar_card > .big_font {
+    font-size: 28px;
+}
+
+.next_to_navbar_card a {
+    color: black;
+}
+
+.next_to_navbar_card span {
+    cursor: pointer;
+}
+
+/* main videio and text container */
+#main_video_and_text_container {
+    position: relative;
+}
+
+/* next to navbar video section */
+
+.next_to_navbar_video {
+    width: 1310px;
+    object-fit: cover;
+    margin: 10px 20px 10px 20px;
+    border-radius: 20px;
+    height: 600px;
+}
+
+/* next to green card container */
+#sub_container_1 {
+    margin:10px 20px 10px 20px;
+    color: white;
+    /* background-color: black; */
+    padding: 15px 20px;
+    position: absolute;
+    top: 50px;
+    left: 60px;
+}
+
+.button_sub_container_1 {
+    width: 400px;
+    background-color: gray;
+    height: 30px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.button_sub_container_1 > button {
+    width: 48%;
+    border-radius: 20px;
+    background-color: transparent;
+    border: none;
+    font-size: 17px;
+}
+
+.button_sub_container_1 > .active_hire_btn {
+    background-color: #222;
+    color: white;
+}
+
+#sub_container_1 > .video_work_heading {
+    width: 450px ;
+    margin-bottom: 20px;
+    font-size: 45px;
+}
+
+#sub_container_1 > p {
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+#video_btn_card {
+    background-color: rgba(0, 0, 0, 0.5); 
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 5px;
+    gap: 20px;
+    border-radius: 20px;
+    height: 160px;
+}
+
+.video-cardbutton {
+    width: 90%;
+    background-color: rgb(136, 135, 135);
+    border-radius: 20px;
+    height: 35px;
+    display: flex;
+    justify-content: center ;
+    gap: 10px;
+}
+
+#video_btn_card button {
+    width: 50%;
+    height: 100%;
+    border-radius: 20px;    
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: black;
+    font-weight: bolder;
+}
+
+#video_btn_card .btn_1 {
+    border: 2px solid white;
+}
+
+.video_input_field {
+    width: 90%;
+    position: relative;
+    /* background-color: #14a800; */
+    
+}
+
+.video_input_field > input {
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    padding-left: 15px;
+    border: none;
+    outline: none;
+}
+
+.video_input_field > button {
+    position: absolute;
+    right: -140px;
+    top: 0px;
+    background-color: gray;
+    color: black;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.video_input_field img {
+    width: 20px;
+}
+
+#other_video_container_btns {
+    display: flex;
+    margin-top: 30px;
+    width: 500px;
+    justify-content: space-between;
+}
+
+#other_video_container_btns > button {
+    border-radius: 30px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background: transparent;
+    color: white;
+}
+
+/* comapnies section */
+#companies{
+    margin: 35px 20px 25px 20px;
+}
+
+/* categorie section */
+#categories {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px 10px 20px;
+}
+
+#categories > h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    margin-left: 40px;
+}
+
+#categories_cards {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 26px;
+    padding: 8px 0;
+}
+
+/* card styling */
+.card {
+    height: 164px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 22px 15px;
+    background-color: white;
+
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* icon */
+.icon {
+    font-size: 38px;
+    color: #14a800;
+}
+
+/* heading */
+.card h2 {
+    font-size: 20px;
+    font-weight: normal;
+    color: #222;
+    line-height: 1.4;
+}
+
+/* Hover effect */
+.card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.20);
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+
+/* HOW IT WORKS SECTION */
+
+.how-it-works {
+    padding: 20px 6px;
+    background-color: white;
+    margin: 10px 20px;
+}
+
+.how-it-works .how-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+.how-it-works .how-top h1 {
+    font-size: 34px;
+    font-weight: normal;
+    color: #222;
+}
+
+.how-it-works .how-buttons {
+    border: 1px solid #999;
+    border-radius: 25px;
+    display: flex;
+    gap: 10px;
+    width: 400px;
+}
+
+.how-it-works .how-buttons button {
+    background-color: white;
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    color: #222;
+    width: 50%;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.how-it-works .how-buttons .active {
+    border: 2px solid #000000;
+    border-radius: 25px;
+}
+
+.how-it-works .how-cards {
+    display: flex;
+    gap: 32px;
+}
+
+.how-it-works .how-card {
+    width: 33.33%;
+}
+
+.how-it-works .how-card img , video {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 15px;
+    display: block;
+    cursor: pointer;
+}
+
+.how-it-works .how-card h2 {
+    margin: 20px 0 0 8px;
+    font-size: 22px;
+    font-weight: normal;
+    color: #222;
+    cursor: pointer;
+} 
+
+/* Ai section */
+#ai_section {
+    display: flex;
+    margin: 30px 20px 20px 20px;
+    background-color: #171717;
+    border-radius: 20px;
+    padding: 7px;
+}
+
+.prompt_section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding-left:30px;
+    background-color: #2C2C2C;
+    border-radius: 20px;
+    color: white;
+}
+
+.prompt_section > h1 {
+    width: 400px;
+    font-size: 40px;
+}
+
+.prompt_input {
+    position: relative;
+    width: 85%;
+    height: 100px;
+    display: flex;
+}
+
+.prompt_input textarea {
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    height: 100px;
+    resize: none;
+    overflow: hidden;
+    padding: 15px 20px;
+    font-size: 14px;
+}
+
+.prompt_input > button {
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+    background-color: #2C3115;
+    border: none;
+    border-radius: 20px;
+    width: 100px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 3px;
+    color: white;
+    cursor: pointer;
+}
+
+/* trusted section */
+.trusted_section_img {
+    margin: 40px 20px 20px 20px;
+}
+
+/* last green card */
+#last_green_card {
+    margin: 30px 50px 20px 50px;
+    background-color: #3eec27;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 180px;
+    border-radius: 25px;
+    gap: 30px;
+}
+
+#last_green_card p {
+    color: white;
+    font-size: 35px;
+}
+
+#last_green_card button {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 18px;
+}
+
+#last_green_card button:hover {
+    background-color: rgb(246, 246, 253);
+}
+
+/* footer section */
+#footer_sectkion {
+    width: 97%;
+    margin: 100px 20px 25px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    height: 700px;
+    background-color: #222222;
+    border-radius: 20px;
+    padding: 0px 80px;
+}
+
+.footer_main_link_container {
+    display: flex;
+    gap: 100px;
+    margin-bottom: 20px;
+}
+
+.box p {
+    font-size: 17px;
+    font-weight: bold;
+    color: #7e7e7e;
+    margin-bottom: 28px;
+}
+
+.box a {
+    display: block;
+    margin-bottom: 18px;
+    text-decoration: none;
+    color: white;
+}
+
+.box a:hover {
+    color: gray;
+}
+
+.icon_sections {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    color: white;
+}
+
+.icon_sections p {
+    color: #7e7e7e;
+}
+
+.apps_icon , .media_icons {
+    display: flex;
+    gap:15px;
+    align-items: center;
+}
+
+.icon_sections img {
+    height: 20px;
+    background-color: white;
+
+}
+
+.copyright_section {
+    display: flex;
+    gap: 20px;
+}
+
+.copyright_section p {
+    color: #7e7e7e;
+    font-size: 16px;
+    margin-right: 35px;
+}
+
+.copyright_section a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: lighter;
+}
